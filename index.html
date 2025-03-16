@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>David Schmidt | Estudiante Data Analytics</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="letter-d.png" title="letter d icons">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David Schmidt">
+    <meta name="description" content="Página web de presentación, donde muestro algunos de los proyectos más relevantes">
+    <meta name="keywords" content="David Schmidt, Data Analytics, Estudiante, Proyectos">
+    <meta name="robots" content="nofollow, noimage, noarchive, nosnippet">
+</head>
+<body>
+    <nav class="barra_nav">
+        <div class="barra_nav__contenedor">
+            <h2>Hola, estos son mis proyectos</h2>
+        </div>
+        <div class="barra_nav__contenedor" id="data_titulo">
+            <h2>Estudiante de Data Analytics</h2>
+        </div>
+        <div class="barra_nav__menu">
+            <ul>
+                <li><a href="https://github.com/David-Schmidt02" rel="noreferrer" target="_blank"><img src="github-mark-white.png" alt="Github" class="lista__icono"></a></li>
+                <li><a href="#">Teléfono</a></li>
+                <li><a href="#">Mail</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="contenedor_tarjetas">
+        <!-- Tarjeta 1 -->
+        <div class="tarjeta" onclick="document.getElementById('modal-proyecto1').showModal()">
+            <h2 class="tarjeta__titulo">Simulación de un SO</h2>
+            <h3 class="tarjeta__subtitulo">C | Ubuntu | Htop</h3>
+        </div>
+        <dialog id="modal-proyecto1" class="tarjeta-modal">
+            <h2 class="tarjeta-modal__titulo">Simulación de un SO</h2>
+            <h3 class="tarjeta-modal__subtitulo">C | Ubuntu | Htop</h3>
+            <button class="tarjeta-modal__boton-info" onclick="toggleDescripcion('descripcion1')">Descripcion</button>
+            <div id="descripcion1" class="tarjeta-modal__descripcion">
+                <p class="tarjeta-modal__boton-info__parrafo">Se realizó una versión simplificada de una computadora, con 4 módulos que intercambian información entre sí:</p>
+                    <ul>
+                        <li><strong>Kernel</strong> encargado de la planificacion de procesos e hilos.</li>
+                        <li><strong>CPU</strong> solicita las instrucciones a memoria, las ejecuta y envia los contextos actualizados.</li>
+                        <li><strong>Memoria</strong>: entrega las instrucciones y manteniene los contextos de ejecución de los procesos.</li>
+                        <li><strong>FileSystem</strong>: creación de archivos a demanda y de la escritura en disco.</li>
+                    </ul>
+                <p class="tarjeta-modal__boton-info__parrafo">Se ejecutan las pruebas para testear los tipos de planificación, las funcionalidades y los memory leaks.</p>
+            </div>
+            <video class="tarjeta-modal__video" controls src="race-condition.mp4"></video>
+            <div class="tarjeta-modal__contenedor-footer">
+                <form method="dialog">
+                    <button class="tarjeta-modal__boton-cerrar">Cerrar</button>
+                </form>
+                <a href="https://github.com/David-Schmidt02/TP-SO-David-Schmidt.git" target="_blank" rel="noreferrer"><img src="github-mark-white.png" alt="Github" class="lista__icono" ></a> 
+            </div>
+            
+        </dialog>
+        
+        <!-- Tarjeta 2 -->
+        <div class="tarjeta" onclick="document.getElementById('modal-proyecto2').showModal()">
+            <h2>Proyecto 2</h2>
+        </div>
+        <dialog id="modal-proyecto2" class="tarjeta-modal">
+            <h2 class="tarjeta-modal__titulo">Proyecto 2</h2>
+            <p>Acá iría un bonito video</p>
+            <form method="dialog">
+                <button class="tarjeta-modal__boton-cerrar">Cerrar</button>
+            </form>
+        </dialog>
+        
+        <!-- Tarjeta 3 -->
+        <div class="tarjeta" onclick="document.getElementById('modal-proyecto3').showModal()">
+            <h2>Proyecto 3</h2>
+        </div>
+        <dialog id="modal-proyecto3" class="tarjeta-modal">
+            <h2 class="tarjeta-modal__titulo">Proyecto 3</h2>
+            <p>Acá iría un bonito video</p>
+            <form method="dialog">
+                <button class="tarjeta-modal__boton-cerrar">Cerrar</button>
+            </form>
+        </dialog>
+    </div>
+    <script>
+        function toggleDescripcion(id) {
+            let desc = document.getElementById(id);
+            if (desc.style.display === "block") {
+                desc.style.display = "none";
+            } else {
+                desc.style.display = "block";
+            }
+        }
+    </script>
+</body>
+<footer>
+    <a id="icono" href="https://www.flaticon.com/free-icons/letter-d" target="_blank" title="letter d icons" rel="noreferrer">Letter d icons created by moniruldislam - Flaticon</a>
+</footer>
+</html>
