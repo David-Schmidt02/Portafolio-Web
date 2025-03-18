@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Rokkitt';
+    src: url('fonts/Rokkitt-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rokkitt';
+    src: url('fonts/Rokkitt-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rokkitt';
+    src: url('fonts/Rokkitt-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Teko";
+    src: url('fonts/Teko-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Teko";    
+    src: url('fonts/Teko-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Teko";
+    src: url('fonts/Teko-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VT323';
+    src: url('fonts/VT323-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
