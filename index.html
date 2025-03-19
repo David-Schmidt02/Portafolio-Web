@@ -12,6 +12,15 @@
         <h1>Portafolio</h1>
         <nav class="nav">
             <ul class="nav__ul">
+                <li class="ul__li li_inicio hideOnMobile"><a href="#"></a>Inicio</li>
+                <li class="ul__li hideOnMobile"><a href="#"></a>Proyectos</li>
+                <li class="ul__li hideOnMobile"><a href="#"></a>Estudios</li>
+                <!--<li class="ul__li hideOnMobile"><a href="#"></a>Sobre mí</li>-->
+                <li class="ul__li hideOnMobile"><a href="#"></a>Contacto</li>
+                <li onclick=showSidebar() class="ul__li side_nav_icon"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+            <ul class="side_nav">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li class="ul__li li_inicio"><a href="#"></a>Inicio</li>
                 <li class="ul__li"><a href="#"></a>Proyectos</li>
                 <li class="ul__li"><a href="#"></a>Estudios</li>
@@ -39,9 +48,10 @@
                     </ul>
                 </div>
             </div> 
+            <!--
             <div class="proyecto">
                 <h2>Proyecto 2</h2>
-                <img class="proyecto__carrete_imagenes" src="Proyecto1.png" alt="">
+
                 <div class="proyecto__footer">
                     <ul class="proyecto__footer__ul">
                         <li class="ul_footer__item icono-c"><img class="footer_icono" src="logos/c_Logo.png" alt="logo de C"></li>
@@ -63,9 +73,20 @@
                 <h2>Proyecto 4</h2>
             </div>
         </div>
+        -->
     </main>  
     <footer>
 
     </footer>
+    <script>
+        function showSidebar(){
+            const side_nav = document.querySelector(".side_nav")
+            side_nav.style.display = "flex"
+        }
+        function hideSidebar(){
+            const side_nav = document.querySelector(".side_nav")
+            side_nav.style.display = "none"
+        }
+    </script>
 </body>
 </html>

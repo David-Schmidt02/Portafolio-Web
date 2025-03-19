@@ -12,21 +12,30 @@ body{
 
 h1{
     cursor: default;
+    display: block;
+    font-size: 2em;
+    padding: 5px 10px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
 }
 .header{
     max-width: 1355px;
-    margin: 30px auto ;
+    display: flex; 
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px 30px;
     background-color: rgba(19, 18, 18,0.2);
     border: 1px solid rgba(122, 122, 122, 0.3);
-    color: #e5e7eb;
-    display: flex;
-    justify-content: space-between;
-    letter-spacing: 2px;
-    padding: 10px 60px;
     border-radius: 50px;
+    color: #e5e7eb;
     font-family: VT323;
     font-size: x-large;
-    font-weight: normal;
+    font-weight: normal; 
+    letter-spacing: 2px;
+
 }
 .nav{
     display: flex;
@@ -51,8 +60,7 @@ h1{
     font-family: Teko;
     font-weight: normal;
     font-size:x-large;
-    padding: 0 10px;
-    margin: 0 5px;
+    margin: 0 15px;
     cursor: pointer;
 }
 .ul__li:hover{
@@ -72,6 +80,46 @@ h1{
     width: 100%;
 }
 
+.side_nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(19, 18, 18,0.5);
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+}
+.side_nav li{
+    width: 100%;
+    align-content: start;
+}
+.side_nav a{
+    width: 100%;
+    align-content: start;
+}
+
+.side_nav_icon{
+    display: none;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .side_nav_icon{
+        display: block;
+    }
+}
+
+@media(max-width: 450px){
+    .side_nav{
+        width: 100%;
+    }
+}
 .main{
     width: 100vw;
 }
@@ -87,7 +135,7 @@ h1{
 .proyecto{
     max-width: 1000px;
     margin: 10px;
-    padding: 15px;
+    padding: 15px;  
     text-align: center;
     border-radius: 7px;
     background-color: rgba(19, 18, 18,0.2);
@@ -119,7 +167,7 @@ h1{
     display: block;
 }
 .proyecto__carrete_imagenes{
-    max-width: 600px;
+    max-width: 200px;
 }
 
 .footer-proyecto{
